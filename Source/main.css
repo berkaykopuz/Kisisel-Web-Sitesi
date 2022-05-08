@@ -1,0 +1,133 @@
+
+h1 {
+    color:#0d7438;
+    font-size: 50%;
+    font-family: fantasy;
+    position: absolute;
+}
+
+#sekerbank{
+    position:absolute;
+    border-radius: 20%;
+
+}
+#navbar{
+    margin-top: 5.45%;
+    text-decoration: none;
+    background-color: #0d7438;
+    border: 2px solid #0a5c2c;
+    border-radius: 10px 0px 0px 0px;
+    
+    
+}
+#navbargiris{
+    margin-top: 5.45%;
+    text-decoration: none;
+    background-color: #0d7438;
+    border: 2px solid #0a5c2c;
+    border-radius: 0px 10px 0px 0px;
+    
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+li {
+    display: inline-block;
+    
+}
+.navitem{
+    
+    text-decoration: none;
+    color:white;
+    position: relative;
+    top:6px;
+
+}
+.navitem:hover{
+    color: #0d7438;
+    background-color: white;
+    
+}
+#hakkinda{
+    background-image:url("arkaplanyesil.jpg");
+    width:659.9px; 
+    height:500px;
+}
+#hakkindayazisi{
+    color:white;
+    font-size: 20px;
+}
+#ilgibody{
+    background-image:url("matrix.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+#filmyazisi{
+    color: white;
+    font-size: 150%;
+    font-family:inherit;
+    
+    position: relative;
+}
+iframe{
+    border-radius: 25px 25px 25px 25px;
+    border-color: aliceblue;
+}
+input{
+    margin-top: 8%;
+    margin-left: 40%;
+    font-size: 20px;
+    border-style:groove;
+    
+}
+
+#reset{
+
+    margin-left: 4%;
+}
+
+h2{
+    left:36%;
+    position:relative;
+    
+}
+.hakkindalink{
+    color:white;
+
+}
+
+
+main{
+    width: 68.7%;
+    
+    display:flex;
+    margin:0px auto;
+}
+#article{
+    background-color: #0a5c2c;
+    padding: 7px;
+    width: 70%;
+}
+#section{
+    background-color: #0c6d35;
+}
+#aside{
+    background-color: black;
+    width:30%;
+    
+}
+#divinaside{
+    margin-left:12.5%;
+}
+#avatar{
+    object-fit: cover;
+    border-radius: 50%;
+}
