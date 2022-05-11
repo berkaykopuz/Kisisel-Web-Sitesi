@@ -11,18 +11,61 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" charset="utf-8"></script>
 
+    <script>
+        //aynı sayfada kalmayı sağlayan bir fonksiyon.
+        function dontGo(event){
+            event.preventDefault();
+        }
+        
+        function validateForm(form, email){
+            if(document.getElementById("email").value == ""){
+                alert("Lütfen Emaili Doldurunuz!");
+                dontGo(event);
+                return false;
+            }
+            
+            if(document.getElementById("sifre").value == ""){
+                alert("Lütfen Şifreyi Giriniz!");
+                dontGo(event);
+                return false;
+            }
+            
+            //Aşağısı email kontrolü için.
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; 
+	        var address = document.forms[form].elements[email].value; 
+	        
+            if(reg.test(address) == false) {
+		    alert('Geçersiz email adresi! ...@sakarya.edu.tr olacak biçimde yazınız.'); 
+            dontGo(event);
+		    return false; 
+	        } 
+
+            
+
+            
+
+	    }
+
+
+       
+        
+    </script>
 </head>
 
 <body>
-    
+    <header>
+        <a href="index.html">Geri Dön</a>
+    </header>
+    <div class="loginbody">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <form method="POST" action="control.php" >
+                <form method="POST" action="control.php" id="form">
                         <h2>  Lütfen Bilgilerinizi Giriniz </h2>  
-                        <input type="text" name="username" placeholder="Email Giriniz" required><br><br>
-                        <input type="password" name="password" placeholder="Şifre Giriniz" required><br><br>
-                        <input type="submit" value="Giriş Yap"> 
+                        
+                        <input type="text" name="email" id="email" placeholder="Email Giriniz" ><br><br>
+                        <input type="password" name="password" id="sifre" placeholder="Şifre Giriniz"><br><br>
+                        <input type="submit" onclick="validateForm('form', 'email'); " value="Giriş Yap"> 
                         <input type="reset" value="Temizle" id="reset">
 
                 </form>
@@ -30,6 +73,7 @@
 
             </div>
         </div>
+    </div>
     </div>
 
 

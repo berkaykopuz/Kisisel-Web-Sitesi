@@ -61,6 +61,7 @@ li {
 }
 #hakkindayazisi{
     color:white;
+    font-size: 20px;
 }
 #ilgibody{
     background-image:url("matrix.jpg");
@@ -87,10 +88,130 @@ input{
     border-style:groove;
     
 }
-h2{
-    margin-left: 35%;
-}
+
 #reset{
+
     margin-left: 4%;
 }
 
+h2{
+    left:36%;
+    position:relative;
+    
+}
+.hakkindalink{
+    color:white;
+
+}
+
+
+main{
+    width: 86.9%;
+    height:650px;
+    
+    
+    display:flex;
+    margin:0px auto;
+}
+#article{
+    background-color: #0a5c2c;
+    padding: 5%;
+    width: 80%;
+}
+#section{
+    background-color:#0a5c2c;
+}
+#aside{
+    background-color: black;
+    width:30%;
+    
+}
+#divinaside{
+    margin-left:10%;
+    
+}
+#avatar{
+    object-fit: cover;
+    border-radius: 50%;
+}
+#cvbaslik{
+    color:white;
+    font-family: fantasy;
+    font-size:40px;
+    margin-left:13%;
+    
+}
+#cvbaslik2{
+    color:white;
+}
+#cvbaslik3{
+    color:black;
+    font-size: 30px;
+}
+#cvyazi{
+    color:white;
+
+}
+.bar{
+    width:300px;
+    height:20px;
+    background-color: black;
+    
+}
+#progressbar{
+    width:50%;
+    height:100%;
+    background-color:white;
+    
+}
+.cvyetenek{
+    color:white;
+    font-size:20px;
+}
+#progressbar2{
+    width:70%;
+    height:100%;
+    background-color:white;
+}
+#progressbar3{
+    width:30%;
+    height:100%;
+    background-color:white;
+}
+#progressbar4{
+    width:40%;
+    height:100%;
+    background-color:white;
+}
+#mirasbody{
+    background-image: url("arkaplanmiras.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width:2000px;
+
+}
+#zilkale{
+    width:100%;
+    height:35%;
+}
+#zilkalesibaslik{
+    text-align: center;
+}
+.mirasyazi{
+    font-size: 17px;
+}
+#unluyerbody{
+    background-image: url("arkaplanunluyer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+    
+}
+.unluyerbaslik{
+    text-align: center;
+    font-size:35px;
+}
+.unluyeryazi{
+    font-size: 25px;
+}
