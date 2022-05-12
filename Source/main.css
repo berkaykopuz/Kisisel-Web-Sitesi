@@ -215,3 +215,12 @@ main{
 .unluyeryazi{
     font-size: 25px;
 }
+#iletisimbody{
+    background-color: rgb(173, 183, 173);
+}
+#gitbody{
+    font-size: 30px;
+}
+#slider{
+    margin-left:15%;
+}
